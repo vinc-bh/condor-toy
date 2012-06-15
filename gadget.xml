@@ -4,10 +4,7 @@
     title="SoundCloud"
     title_url="http://soundcloud.com/"
     description="Sounds from this email"
-    height="20"
-    author="Eric Wahlforss, Tobias Bielohlawek"
-    author_email="eric@soundcloud.com, tobi@soundcloud.com"
-    author_location="Berlin, Germany">
+    height="100">
 
     <Require feature="dynamic-height"/>
 
@@ -22,23 +19,7 @@
   <Content type="html" view="card">
     <![CDATA[
 <html>
-	<head>
-
-    <script type="text/javascript">
-/*jQuery(document).ready(function() {
-  $(document.body).gadgetize({
-    dataType: 'jsonp',
-    showDefault: 1,
-    urls: google.contentmatch.getContentMatches(),
-    updateHeightCallback: function(height) {
-      gadgets.window.adjustHeight(height);
-    }
-  });
-});*/
-    </script>
-
-	</head>
-	<body class="sc-gadget">
+	<body>
 	<h1> Hello !!! </h1>
 	</body>
 </html>
