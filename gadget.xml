@@ -10,7 +10,7 @@
 
     <Require feature="google.contentmatch">
       <Param name="extractors">
-        google.com:HttpLinkExtractor
+        google.com:SubjectExtractor
       </Param>
     </Require>
 
