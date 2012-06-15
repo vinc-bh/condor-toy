@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs
+    title="SoundCloud"
+    title_url="http://soundcloud.com/"
+    description="Sounds from this email"
+    height="20"
+    author="Eric Wahlforss, Tobias Bielohlawek"
+    author_email="eric@soundcloud.com, tobi@soundcloud.com"
+    author_location="Berlin, Germany">
+
+    <Require feature="dynamic-height"/>
+
+    <Require feature="google.contentmatch">
+      <Param name="extractors">
+        google.com:HttpLinkExtractor
+      </Param>
+    </Require>
+
+  </ModulePrefs>
+
+  <Content type="html" view="card">
+    <![CDATA[
+<html>
+	<head>
+
+    <script type="text/javascript">
+/*jQuery(document).ready(function() {
+  $(document.body).gadgetize({
+    dataType: 'jsonp',
+    showDefault: 1,
+    urls: google.contentmatch.getContentMatches(),
+    updateHeightCallback: function(height) {
+      gadgets.window.adjustHeight(height);
+    }
+  });
+});*/
+    </script>
+
+	</head>
+	<body class="sc-gadget">
+	<h1> Hello !!! </h1>
+	</body>
+</html>
+
+    ]]>
+  </Content>
+</Module>
