@@ -8,15 +8,11 @@
 
     <Require feature="dynamic-height"/>
 
-    <Require feature="google.contentmatch">
-      <Param name="extractors">
-        google.com:SubjectExtractor
-      </Param>
-    </Require>
+
 
   </ModulePrefs>
 
-  <Content type="html" view="card">
+  <Content type="html">
     <![CDATA[
 <html>
 	<body>
