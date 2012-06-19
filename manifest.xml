@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ApplicationManifest xmlns="http://schemas.google.com/ApplicationManifest/2009">
 
+<Support>
+    <!-- URL for application setup as an optional redirect during the install -->
+    <Link rel="setup" href="http://example.com/google/setup.php?domain=${DOMAIN_NAME}" />
+
+    <!-- URL for application configuration, accessed from the app settings
+     page in the control panel -->
+    <Link rel="manage" href="http://example.com/google/admin.php?domain=${DOMAIN_NAME}" />
+
+    <!-- URL explaining how customers get support. -->
+    <Link rel="support" href="http://example.com/google/support.php" />
+
+    <!-- URL that is displayed to admins during the deletion process,
+     to specify policies such as data retention, how to claim accounts, etc. -->
+    <Link rel="deletion-policy" href="http://example.com/google/deletion-policy.php" />
+  </Support>
+
   <!-- Name and description pulled from message bundles -->
   <Name>HelloWorld</Name>
   <Description>A simple Hello World application for testing
   Gmail contextual gadgets</Description>
 
   <!-- Show this link in Google's universal navigation for all users -->
-  <Extension id="navLink" type="link">
+  <!--<Extension id="navLink" type="link">
     <Name>HelloWorld</Name>
     <Url>http://_example.com_/home.php?from=google&domain=${DOMAIN_NAME}</Url>
   </Extension>
-
+-->
   <!-- Declare our OpenID realm so our app is white listed -->
   <Extension id="realm" type="openIdRealm">
     <Url>http://_example.com_</Url>
@@ -35,7 +51,7 @@
 
 <Extension id="HelloWorldGadget" type="gadget">
   <Name>Hello World Gmail contextual gadget</Name>
-  <Url>_http://example.com/gadgets/hello_world_gadget.xml_</Url>
+  <Url>https://raw.github.com/vinc-bh/condor-toy/master/gadget.xml</Url>
   <Container name="mail"/>
   <!-- Uncomment this to enable Caja. -->
   <!-- <Param name="caja" value="enabled"/> -->
